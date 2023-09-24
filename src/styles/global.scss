@@ -1,0 +1,33 @@
+@import "./vars.scss";
+
+body {
+  background: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+}
+
+body, input, select, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.form__double-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+@media screen and (max-width: $breakPointSmall) {
+  body {
+    padding: 5px;
+  }
+
+  .form__double-row {
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
